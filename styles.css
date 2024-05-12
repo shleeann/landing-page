@@ -1,0 +1,17 @@
+/* styles.css */
+* {
+    outline: 1px solid red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#header {
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+}
