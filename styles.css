@@ -174,3 +174,11 @@ a {
     height: 30px;
     width: 100px;
 }
+
+/* --footer-- */
+#footer {
+    width: auto;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
