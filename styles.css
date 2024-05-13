@@ -50,7 +50,6 @@ a {
 .container1 {
     background-color: #1f2937;
     display: flex;
-    flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -131,4 +130,47 @@ a {
     text-align: end;
     width: 750px;
     align-self: center;
+}
+
+/* --fourth container-- */
+.container4 {
+    display: flex;
+    justify-content: center;
+}
+
+.container4 .banner {
+    background-color: #3882f6;
+    color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    flex-basis: 840px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+
+.container4 .text {
+    padding: 10px;
+}
+
+.container4 .text-header {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.container4 .text-info {
+    color: #e5e7eb;
+}
+
+.container4 button {
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    height: 30px;
+    width: 100px;
 }
