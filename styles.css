@@ -8,23 +8,31 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
+    margin: 0;
+    padding: 0;
 }
 
-/* general multi applications */
+/* --general applications-- */
 #header, #footer {
     background-color: #1f2937;
     color: white;
     display: flex;
 }
 
-/* header */
-#header {
-    display: flex;
-    justify-content: space-between;
+p {
+    padding: 0;
+    margin: 0;
 }
 
-#header .nav-header {
+/* --header-- */
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .nav-logo {
     font-size: 24px;
 }
 
@@ -35,8 +43,92 @@ a {
 
 #header .right-nav {
     display: flex;
-    align-items: center;
     gap: 25px;
 }
 
 /* first container */
+.container1 {
+    background-color: #1f2937;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 .title {
+    font-size: 48px;
+    font-weight: bolder
+}
+
+.container1 .text {
+    color: white;
+    flex-basis: 420px;
+}
+
+.container1 img {
+    width: 420px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.container1 button {
+    background-color: #3882f6;
+    border-radius: 5px;
+}
+
+/* --second container-- */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .header-text {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.container2 .content-cards {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.container2 .card {
+    width: 150px;
+}
+
+/* .container2 img {
+    /insert css code here/
+} */
+
+.container2 .text {
+    text-align: center;
+}
+
+/* --third container-- */
+.container3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container3 .quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    align-self: center;
+    width: 750px;
+}
+
+.container3 .author {
+    font-weight: bold;
+    text-align: end;
+    width: 750px;
+    align-self: center;
+}
