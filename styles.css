@@ -1,7 +1,7 @@
 /* styles.css */
-* {
+/* * {
     outline: 1px solid red;
-}
+} */
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -28,12 +28,14 @@ p {
 #header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 #header .nav-logo {
     font-size: 24px;
+    flex-basis: 420px;
 }
 
 a {
@@ -43,16 +45,20 @@ a {
 
 #header .right-nav {
     display: flex;
+    justify-content: right;
     gap: 25px;
+    flex-basis: 420px;
+    flex-wrap: wrap;
 }
 
-/* first container */
+/* --first container-- */
 .container1 {
     background-color: #1f2937;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 100px;
 }
 
 .container1 .title {
@@ -63,6 +69,11 @@ a {
 .container1 .text {
     color: white;
     flex-basis: 420px;
+    padding-bottom: 10px;
+}
+
+.container1 .paragraph {
+    padding: 0px 30px 10px 0px;
 }
 
 .container1 img {
@@ -74,6 +85,11 @@ a {
 .container1 button {
     background-color: #3882f6;
     border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
 }
 
 /* --second container-- */
@@ -82,12 +98,14 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 100px;
 }
 
 .container2 .header-text {
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+    margin-bottom: 40px;
 }
 
 .container2 .content-cards {
@@ -101,9 +119,18 @@ a {
     width: 150px;
 }
 
-/* .container2 img {
-    /insert css code here/
-} */
+.container2 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.container2 .image-container {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #3882f6;
+    border-radius: 10px;
+}
 
 .container2 .text {
     text-align: center;
@@ -111,31 +138,37 @@ a {
 
 /* --third container-- */
 .container3 {
+    background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    padding: 100px;
 }
 
 .container3 .quote {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
-    align-self: center;
-    width: 750px;
+    width: 100%;
+    max-width: 750px;
 }
 
 .container3 .author {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
     font-weight: bold;
-    text-align: end;
-    width: 750px;
-    align-self: center;
+    width: 100%;
+    max-width: 750px;
 }
 
 /* --fourth container-- */
 .container4 {
     display: flex;
     justify-content: center;
+    padding: 100px;
 }
 
 .container4 .banner {
